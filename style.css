@@ -239,5 +239,35 @@ figcaption{
 }
 
 
+/* significa que telas com menos de 768 terá os comportamentos abaixo */
+@media all and (max-width:886px){
+    #menu{
+        visibility: hidden; /* esconde o menu */
+    }
+
+    
+    .coluna, .cDois, .container{
+        display: block; /* Deixará em blocos os conteudos nessas divs */
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+
+    }
+
+    /* deixando a imagem centralizada */
+    #imgLogo{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        
+    }
+    /* quem está com aquele atributo a esquerda era a imagem si */
+    #logo{
+        margin-left:0;
+         transform: translateX(-50%); /*vai caminhar metade do corpo dele para trás no eixo X */
+    }
 
 
+
+}
